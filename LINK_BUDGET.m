@@ -4,7 +4,7 @@
 clear;
 
 % defines
-Prx_exist = -101;
+Prx_exist = -110; % @10Kbps
 SMA_CONNECTOR_LOSS = 0.5; % dB
 RG58_CABLE_LOSS = 1; % 1dB per meter
 CABLE_LENGTH = 0.0; % meter
