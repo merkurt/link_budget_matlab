@@ -4,13 +4,13 @@
 clear;
 
 % defines
-Prx_exist = -110; % @10Kbps
-SMA_CONNECTOR_LOSS = 0.5; % dB
+Prx_exist = -121; % dBm
+SMA_CONNECTOR_LOSS = 1; % dB
 RG58_CABLE_LOSS = 1; % 1dB per meter
 CABLE_LENGTH = 0.0; % meter
 
 % transmitter output power (dBm)
-Ptx = 24;
+Ptx = 30;
 
 % transmitter antenna gain (dBi)
 Gtx = 3;
@@ -19,10 +19,10 @@ Gtx = 3;
 Ltx = SMA_CONNECTOR_LOSS; 
 
 % path loss, usually free space loss (dB)
-Lfs = 107.2866; % FSPL_CALC.m 920MHz 6000meter
+Lfs = 115.2454; % FSPL_CALC.m 920MHz 15000meter
 
 % miscellaneous losses (fading margin, body loss, polarization mismatch, other losses...) (dB)
-Lm = 1; % Polarisation errors
+Lm = 5; % Polarisation errors
 
 % receiver antenna gain (dBi)
 Grx = 3;
